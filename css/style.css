@@ -1,0 +1,7 @@
+/* Base */
+@import url('./base/reset.css');
+@import url('./base/variables.css');
+
+/* Sections */
+@import url('./sections/header.css');
+@import url('./sections/hero.css');
