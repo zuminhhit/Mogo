@@ -11,36 +11,47 @@
     <div class="Responsive">
       <div class="Header-container">
         <div class="Header-logo">
-          <img src="assets/icons/logo.png" alt="" class="Header-logo__img" />
+          <a href="#" class="Header-logo-link" data-prop44="home-header_01">
+            <img src="assets/icons/logo.png" alt="Logo"
+              class="Header-logo-link__img"
+            	loading="eager"
+              decoding="sync"
+              fetchpriority="high"
+              width="86"
+              height="23"
+          />
+          </a>
         </div>
         <nav class="Header-nav">
           <ul class="Header-nav-menu">
             <li class="Header-nav-menu-item">
-              <a class="Header-nav-menu-item__link" href="#">About</a>
+              <a class="Header-nav-menu-item__link is-active"
+                href="#" data-prop44="home-header_about_01"
+              >
+                About
+              </a>
             </li>
             <li class="Header-nav-menu-item">
-              <a class="Header-nav-menu-item__link" href="#">Service</a>
+              <a class="Header-nav-menu-item__link" href="#" data-prop44="home-header_service_01">Service</a>
             </li>
             <li class="Header-nav-menu-item">
-              <a  class="Header-nav-menu-item__link" href="#">Work</a>
+              <a  class="Header-nav-menu-item__link" href="#" data-prop44="home-header_work_01">Work</a>
             </li>
             <li class="Header-nav-menu-item">
-              <a class="Header-nav-menu-item__link" href="#">Blog</a>
+              <a class="Header-nav-menu-item__link" href="#" data-prop44="home-header_blog_01">Blog</a>
             </li>
             <li class="Header-nav-menu-item">
-              <a class="Header-nav-menu-item__link" href="#">Contact</a>
+              <a class="Header-nav-menu-item__link" href="#" data-prop44="home-header_contact_01">Contact</a>
             </li>
           </ul>
           <div class="Header-action">
-            <a href="#" class="Header-action-link">
-              <img class="Header-action-link__cart" src="assets/icons/cart.svg" alt="">
+            <a href="#" class="Header-action-link__cart" data-prop44="home-header_cart_01" aria-label="Cart">
             </a>
-            <a href="#" class="Header-action-link">
-              <img class="Header-action-link__search" src="assets/icons/search.svg" alt="">
+            <a href="#" class="Header-action-link__search" data-prop44="home-header_search_01" aria-label="Search">
             </a>
           </div>
         </nav><!-- END PC Header-->
-        <button class="sp Header-toggle js-header-toggle" aria-label="Open sp menu">
+        <button class="sp Header-toggle js-header-toggle" aria-label="Open sp menu" data-prop44="home-header_burger_menu_01">
             <span class="Header-toggle__item"></span>
         </button>
       </div><!-- END Container-->
@@ -52,85 +63,62 @@
       <div class="Hero-container js-hold-slider">
         <div class="Hero-slider js-toggle-slider is-active">
           <p class="Hero-slider__subtitle">Creative Template</p>
-
           <h1 class="Hero-slider__title">
-            Welcome To <br />
+            Welcome To <br>
             MoGo
           </h1>
-
           <span class="Hero-slider__line"></span>
-
-          <a href="#" class="Hero-slider__btn">Learn More</a>
+          <a href="#" class="Hero-slider__btn" data-prop44="home-hero-slider-01_learn_more_01">Learn More</a>
         </div>
         <div class="Hero-slider js-toggle-slider">
           <p class="Hero-slider__subtitle">Creative Template</p>
-
           <h1 class="Hero-slider__title">
-            Welcome To <br />
+            Welcome To <br>
             MoGo1
           </h1>
-
           <span class="Hero-slider__line"></span>
-
-          <a href="#" class="Hero-slider__btn">Learn More</a>
+          <a href="#" class="Hero-slider__btn" data-prop44="home-hero-slider-02_learn_more_01">Learn More</a>
         </div>
         <div class="Hero-slider js-toggle-slider">
           <p class="Hero-slider__subtitle">Creative Template</p>
-
           <h1 class="Hero-slider__title">
-            Welcome To <br />
+            Welcome To <br>
             MoGo2
           </h1>
-
           <span class="Hero-slider__line"></span>
-
-          <a href="#" class="Hero-slider__btn">Learn More</a>
+          <a href="#" class="Hero-slider__btn" data-prop44="home-hero-slider-03_learn_more_01">Learn More</a>
         </div>
         <div class="Hero-slider js-toggle-slider">
           <p class="Hero-slider__subtitle">Creative Template</p>
-
           <h1 class="Hero-slider__title">
-            Welcome To <br />
+            Welcome To <br>
             MoGo3
           </h1>
-
           <span class="Hero-slider__line"></span>
-
-          <a href="#" class="Hero-slider__btn">Learn More</a>
+          <a href="#" class="Hero-slider__btn" data-prop44="home-hero-slider-04_learn_more_01">Learn More</a>
         </div>
       </div><!-- END Hero Container-->
-
       <div class="Hero-pagination">
         <div class="Hero-page js-move-page is-active" data-slide="0">
           <span class="Hero-page__number">01</span>
           <span class="Hero-page__text">Intro</span>
         </div>
-
         <div class="Hero-page js-move-page" data-slide="1">
           <span class="Hero-page__number">02</span>
           <span class="Hero-page__text">Work</span>
         </div>
-
         <div class="Hero-page js-move-page" data-slide="2">
           <span class="Hero-page__number">03</span>
           <span class="Hero-page__text">About</span>
         </div>
-
         <div class="Hero-page js-move-page" data-slide="3">
           <span class="Hero-page__number">04</span>
           <span class="Hero-page__text">Contacts</span>
         </div>
       </div>
-
-      <button class="Hero-arrow Hero-arrow--prev js-hero-prev" aria-label="Previous slide">
-        <img class="Hero-arrow__img" src="assets/images/hero/left-arrow.svg" alt="">
-      </button>
-
-      <button class="Hero-arrow Hero-arrow--next js-hero-next" aria-label="Next slide">
-        <img class="Hero-arrow__img" src="assets/images/hero/right-arrow.svg" alt="">
-      </button>
+      <button class="Hero-arrow Hero-arrow--prev js-hero-prev" aria-label="Previous slider" data-prop44="home-hero-slider_prev_01"></button>
+      <button class="Hero-arrow Hero-arrow--next js-hero-next" aria-label="Next slider" data-prop44="home-hero-slider-next_01"></button>
     </section><!--END Hero -->
-
   </main>
 
   <footer class="Footer"></footer>

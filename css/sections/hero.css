@@ -101,7 +101,7 @@
   display: flex;
   padding: 0 0 25px;
   z-index: 2;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .Hero-page {
@@ -138,12 +138,27 @@
   transition: opacity 0.3s ease;
 }
 
+.Hero-arrow--prev,
+.Hero-arrow--next {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
 .Hero-arrow--prev {
   left: 1rem;
+  background-image: url(/assets/images/hero/left-arrow.svg);
 }
 
 .Hero-arrow--next {
   right: 1rem;
+  background-image: url(/assets/images/hero/right-arrow.svg);
 }
 
 .Hero-arrow__img {
@@ -158,12 +173,22 @@
   opacity: 0.8;
 }
 
+@media screen and (max-width: 959.98px) and (orientation: landscape) {
+  .Hero-arrow--prev {
+    left: 3rem;
+  }
+
+  .Hero-arrow--next {
+    right: 3rem;
+  }
+}
+
 @media screen and (min-width: 960px) {
   .Hero-pagination {
     width: 80%;
     margin: 0 auto;
     padding: 0 60px 30px;
-    gap: 3rem;
+    gap: 5rem;
   }
 
   .Hero-page {
@@ -225,5 +250,13 @@
 
   .Hero-page__number {
     font-weight: 700;
+  }
+
+  .Hero-arrow--prev {
+    left: 3rem;
+  }
+
+  .Hero-arrow--next {
+    right: 3rem;
   }
 }
