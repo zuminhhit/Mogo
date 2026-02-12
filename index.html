@@ -18,19 +18,6 @@
             <li class="Header-nav-menu-item">
               <a class="Header-nav-menu-item__link" href="#">About</a>
             </li>
-              <li class="Header-nav-menu-item">
-              <a class="Header-nav-menu-item__link" href="#">About</a>
-            </li>
-
-              <li class="Header-nav-menu-item">
-              <a class="Header-nav-menu-item__link" href="#">About</a>
-            </li>
-              <li class="Header-nav-menu-item">
-              <a class="Header-nav-menu-item__link" href="#">About</a>
-            </li>
-              <li class="Header-nav-menu-item">
-              <a class="Header-nav-menu-item__link" href="#">About</a>
-            </li>
             <li class="Header-nav-menu-item">
               <a class="Header-nav-menu-item__link" href="#">Service</a>
             </li>
@@ -62,15 +49,88 @@
 
   <main class="Main">
     <section class="Hero">
-      <div class="Hero-inner">
-        <p class="Hero-subtitle">Creative Template</p>
-          <h1 class="Hero-title">
-          Welcome To <br />
-          MoGo
-        </h1>
-        <a href="#" class="Hero-btn">Learn More</a>
+      <div class="Hero-container js-hold-slider">
+        <div class="Hero-slider js-toggle-slider is-active">
+          <p class="Hero-slider__subtitle">Creative Template</p>
+
+          <h1 class="Hero-slider__title">
+            Welcome To <br />
+            MoGo
+          </h1>
+
+          <span class="Hero-slider__line"></span>
+
+          <a href="#" class="Hero-slider__btn">Learn More</a>
+        </div>
+        <div class="Hero-slider js-toggle-slider">
+          <p class="Hero-slider__subtitle">Creative Template</p>
+
+          <h1 class="Hero-slider__title">
+            Welcome To <br />
+            MoGo1
+          </h1>
+
+          <span class="Hero-slider__line"></span>
+
+          <a href="#" class="Hero-slider__btn">Learn More</a>
+        </div>
+        <div class="Hero-slider js-toggle-slider">
+          <p class="Hero-slider__subtitle">Creative Template</p>
+
+          <h1 class="Hero-slider__title">
+            Welcome To <br />
+            MoGo2
+          </h1>
+
+          <span class="Hero-slider__line"></span>
+
+          <a href="#" class="Hero-slider__btn">Learn More</a>
+        </div>
+        <div class="Hero-slider js-toggle-slider">
+          <p class="Hero-slider__subtitle">Creative Template</p>
+
+          <h1 class="Hero-slider__title">
+            Welcome To <br />
+            MoGo3
+          </h1>
+
+          <span class="Hero-slider__line"></span>
+
+          <a href="#" class="Hero-slider__btn">Learn More</a>
+        </div>
+      </div><!-- END Hero Container-->
+
+      <div class="Hero-pagination">
+        <div class="Hero-page js-move-page is-active" data-slide="0">
+          <span class="Hero-page__number">01</span>
+          <span class="Hero-page__text">Intro</span>
+        </div>
+
+        <div class="Hero-page js-move-page" data-slide="1">
+          <span class="Hero-page__number">02</span>
+          <span class="Hero-page__text">Work</span>
+        </div>
+
+        <div class="Hero-page js-move-page" data-slide="2">
+          <span class="Hero-page__number">03</span>
+          <span class="Hero-page__text">About</span>
+        </div>
+
+        <div class="Hero-page js-move-page" data-slide="3">
+          <span class="Hero-page__number">04</span>
+          <span class="Hero-page__text">Contacts</span>
+        </div>
       </div>
-    </section>
+
+      <button class="Hero-arrow Hero-arrow--prev js-hero-prev" aria-label="Previous slide">
+        <img class="Hero-arrow__img" src="assets/images/hero/left-arrow.svg" alt="">
+      </button>
+
+      <button class="Hero-arrow Hero-arrow--next js-hero-next" aria-label="Next slide">
+        <img class="Hero-arrow__img" src="assets/images/hero/right-arrow.svg" alt="">
+      </button>
+    </section><!--END Hero -->
+
   </main>
 
   <footer class="Footer"></footer>

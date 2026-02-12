@@ -1,5 +1,6 @@
 .Hero {
-  height: 100vh;
+  min-height: 100dvh;
+  padding-top: var(--header-height);
   background: var(--backgroud-hero-linear-gradient),
               url(/assets/images/bg/app-landing-bg.png)
               center / cover no-repeat;
@@ -9,11 +10,220 @@
   justify-content: center;
   text-align: center;
   color: #fff;
+  overflow: hidden;
 }
 
-/* .Hero::after {
+.Hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-} */
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1; /* Hero bg: the lowest in hero */
+}
+
+.Hero-container {
+  max-width: var(--container-width);
+  width: 100%;
+  padding: 0 2rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2; /* Hero container: taller than hero bg */
+}
+
+.Hero-slider {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition:
+    opacity 1.5s cubic-bezier(.4,0,.2,1),
+    transform 1.5s cubic-bezier(.4,0,.2,1);
+  pointer-events: none;
+}
+
+.Hero-slider.is-active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  z-index: 2;
+}
+
+
+.Hero-slider__subtitle {
+  font-family: "Kaushan Script", cursive;
+  font-size: clamp(2rem, 3vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+.Hero-slider__title {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.Hero-slider__line {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  margin: 0 auto 2rem;
+}
+
+.Hero-slider__btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.Hero-slider__btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.Hero-pagination {
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 50;
+  width: 100%;
+  display: flex;
+  padding: 0 0 25px;
+  z-index: 2;
+  gap: 1rem;
+}
+
+.Hero-page {
+  width: 20px;
+  height: 3px;
+  background: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: scale(1.2);
+}
+
+.Hero-page.is-active {
+  background: #f38181;
+}
+
+.Hero-page__number,
+.Hero-page__text {
+  display: none;
+}
+
+.Hero-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+  transition: opacity 0.3s ease;
+}
+
+.Hero-arrow--prev {
+  left: 1rem;
+}
+
+.Hero-arrow--next {
+  right: 1rem;
+}
+
+.Hero-arrow__img {
+  width: 2rem;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.Hero-arrow__img:hover {
+  transform: scale(1.15);
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 960px) {
+  .Hero-pagination {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 60px 30px;
+    gap: 3rem;
+  }
+
+  .Hero-page {
+    flex: 1;
+    height: auto;
+    background: none;
+    position: relative;
+    padding-top: 25px;
+    color: rgba(255,255,255,0.6);
+    font-size: 14px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .Hero-page:hover {
+    transform: scale(1);
+  }
+
+  .Hero-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: rgba(255,255,255,0.3);
+  }
+
+  .Hero-page::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #f38181;
+    transition: 0.4s ease;
+  }
+
+  .Hero-page:hover::after {
+    width: 50%;
+  }
+
+
+  .Hero-page.is-active {
+    color: #fff;
+    background-color: transparent;
+  }
+
+  .Hero-page.is-active::after {
+    width: calc(100% / 3);
+  }
+
+  .Hero-page__number,
+  .Hero-page__text {
+    display: block;
+  }
+
+  .Hero-page__number {
+    font-weight: 700;
+  }
+}
