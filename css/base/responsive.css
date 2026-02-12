@@ -1,0 +1,33 @@
+.pc {
+  display: none;
+}
+
+.sp {
+  display: block;
+}
+
+@media screen and (max-width: 959.98px) {
+  .pc {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .sp {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .sp {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .pc {
+    display: block;
+  }
+}

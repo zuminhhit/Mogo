@@ -1,5 +1,6 @@
 /* Base */
 @import url('./base/reset.css');
+@import url('./base/responsive.css');
 @import url('./base/variables.css');
 
 /* Sections */
