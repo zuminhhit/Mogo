@@ -1,0 +1,15 @@
+.Footer {
+    margin-top: auto;
+}
+
+.Footer-copyright {
+    border-top: 1px solid #e5e5e5;
+    padding: 20px 0;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+}
+
+.Footer__author {
+    color: #f38181;
+}
