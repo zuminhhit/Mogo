@@ -127,11 +127,11 @@
 }
 
 .Header-action-link__cart {
-  background-image: url(/assets/icons/cart.svg);
+  background-image: url(../../assets/icons/cart.svg);
 }
 
 .Header-action-link__search {
-  background-image: url(/assets/icons/search.svg);
+  background-image: url(../../assets/icons/search.svg);
 }
 
 .Header-action-link__cart:hover,

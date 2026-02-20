@@ -2,7 +2,7 @@
   min-height: 100dvh;
   padding-top: var(--header-height);
   background: var(--backgroud-hero-linear-gradient),
-              url(/assets/images/bg/app-landing-bg.png)
+              url(../../assets/images/bg/app-landing-bg.png)
               center / cover no-repeat;
   position: relative;
   display: flex;
@@ -153,12 +153,12 @@
 
 .Hero-arrow--prev {
   left: 1rem;
-  background-image: url(/assets/images/hero/left-arrow.svg);
+  background-image: url(../../assets/images/hero/left-arrow.svg);
 }
 
 .Hero-arrow--next {
   right: 1rem;
-  background-image: url(/assets/images/hero/right-arrow.svg);
+  background-image: url(../../assets/images/hero/right-arrow.svg);
 }
 
 .Hero-arrow__img {

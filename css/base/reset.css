@@ -10,3 +10,7 @@
 body.is-locked {
   overflow: hidden;
 }
+
+body {
+  height: 5000px;
+}
