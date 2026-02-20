@@ -27,4 +27,9 @@
   --story-transition-speed: 0.35s;
   --story-transition-ease: ease;
   --story-hover-offset: -10px;
+
+  --stats-bg: #95e1d3;
+  --stats-divider: rgba(255, 255, 255, 0.4);
+  --stats-text: #ffffff;
+  --stats-font-main: 'Montserrat', sans-serif;
 }
