@@ -12,4 +12,19 @@
   --hamburger-gap: 8px;
   --hamburger-thickness: 2px;
   --hamburger-width: 24px;
+
+  --story-primary: #f38181;
+  --story-accent: #95e1d3;
+  --story-text-dark: #333;
+  --story-text-muted: #777;
+  --story-white: #ffffff;
+  --story-overlay-bg: rgba(243, 129, 129, 0.9);
+
+  --story-font-script: 'Kaushan Script', cursive;
+  --story-font-heading: 'Montserrat', sans-serif;
+  --story-font-body: 'Roboto', sans-serif;
+
+  --story-transition-speed: 0.35s;
+  --story-transition-ease: ease;
+  --story-hover-offset: -10px;
 }
