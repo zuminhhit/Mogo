@@ -1,0 +1,133 @@
+.Services {
+    padding: 3rem 0;
+    background: #fff;
+}
+
+.Services-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Services-header {
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+.Services-header__sub-ttl {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 1rem;
+	margin-bottom: 0.75rem;
+}
+
+.Services-header__ttl {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	margin-bottom: 1rem;
+}
+
+.Services-header__divider {
+    display: block;
+	width: 3rem;
+	height: 3px;
+	background: #f38181;
+	margin: 0 auto;
+}
+
+.Services-list {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.Service-item {
+	display: flex;
+	align-items: flex-start;
+	gap: 1.25rem;
+	padding-bottom: 2rem;
+	border-bottom: 1px solid #c5c5c5;
+}
+
+.Service-item__icon {
+	flex-shrink: 0;
+	font-size: 2rem;
+	color: #95e1d3;
+	line-height: 1;
+}
+
+.Service-item-content__ttl {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.9rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 0.5rem;
+}
+
+.Service-item-content__desc {
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.85rem;
+	line-height: 1.6;
+	color: #777;
+}
+
+.Service-item__icon {
+	transition: color 0.3s ease;
+}
+
+.Service-item:hover .Service-item__icon {
+	color: #f38181;
+}
+
+@media screen and (max-width: 959.98px) and (orientation: landscape) {
+	.Services-list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2.5rem 2rem;
+
+		background-image:
+			linear-gradient(#c5c5c5, #c5c5c5),
+			linear-gradient(#c5c5c5, #c5c5c5);
+
+		background-size:
+			100% 1px,
+			100% 1px;
+
+		background-position:
+			center calc(100% / 3),
+			center calc(200% / 3);
+
+		background-repeat: no-repeat;
+	}
+
+	.Service-item {
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.Services-list {
+		display: grid;
+		position: relative;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 3rem 2rem;
+	}
+
+	.Services-list::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 50%;
+		height: 1px;
+		background: #c5c5c5;
+	}
+
+	.Service-item {
+		padding-bottom: 0;
+		border: none;
+	}
+}
