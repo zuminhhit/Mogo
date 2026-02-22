@@ -32,4 +32,32 @@
   --stats-divider: rgba(255, 255, 255, 0.4);
   --stats-text: #ffffff;
   --stats-font-main: 'Montserrat', sans-serif;
+
+  --social-clr-accent: #95e1d3;
+  --social-clr-text-main: #333;
+  --social-clr-text-muted: #777;
+  --social-clr-text-light: #bbb;
+  --social-clr-text-dim: #ccc;
+  --social-clr-border: #e5e5e5;
+  --social-clr-border-alt: #eee;
+  --social-clr-white: #fff;
+
+  --social-spc-xs: 0.5rem;
+  --social-spc-sm: 1rem;
+  --social-spc-md: 1.5rem;
+  --social-spc-lg: 2rem;
+  --social-spc-xl: 3rem;
+  --social-section-mg-mb: 3rem;
+  --social-section-mg-dt: 4rem;
+
+  --social-fw-bold: 700;
+  --social-fw-semi: 600;
+  --social-fw-light: 300;
+  --social-fz-logo-mb: 2rem;
+  --social-fz-logo-dt: 3rem;
+  --social-fz-stats: 2rem;
+  --social-fz-base: 1rem;
+  --social-fz-small: 13px;
+
+  --social-transition: all 0.3s linear;
 }
