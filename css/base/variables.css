@@ -12,6 +12,7 @@
   --hamburger-gap: 8px;
   --hamburger-thickness: 2px;
   --hamburger-width: 24px;
+  --section-mg-mb: 3rem;
 
   --story-primary: #f38181;
   --story-accent: #95e1d3;
@@ -60,4 +61,23 @@
   --social-fz-small: 13px;
 
   --social-transition: all 0.3s linear;
+
+  --map-clr-accent: #f38181;
+  --map-clr-overlay: rgba(255, 255, 255, 0.75);
+
+  --map-h-mb: 220px;
+  --map-h-ls: 260px;
+  --map-h-dt: 300px;
+
+  --map-fz-icon-mb: 2rem;
+  --map-fz-icon-ls: 2.3rem;
+  --map-fz-icon-dt: 2.6rem;
+
+  --map-fz-text-mb: 1.2rem;
+  --map-fz-text-ls: 1.4rem;
+  --map-fz-text-dt: 1.6rem;
+
+  --map-sep-w: 60px;
+  --map-sep-h: 3px;
+  --map-gap: 0.5rem;
 }
