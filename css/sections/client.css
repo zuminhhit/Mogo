@@ -1,0 +1,109 @@
+.Client {
+  background: linear-gradient(var(--client-bg-overlay), var(--client-bg-overlay)),
+    url(../../assets/images/client/bg.webp) center / cover no-repeat;
+  overflow: hidden;
+  margin: var(--section-mg-mb) 0;
+}
+
+.Client-container {
+  max-width: var(--container-width);
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.Client-header {
+  margin-top: var(--client-header-mg);
+  text-align: center;
+  margin-bottom: var(--section-mg-mb);
+}
+
+.Client-header__sub-ttl {
+  font-family: "Kaushan Script", cursive;
+  font-size: var(--client-fz-sub);
+  color: var(--color-primary);
+  margin-bottom: 0.75rem;
+  font-style: italic;
+}
+
+.Client-header__ttl {
+  font-size: var(--client-fz-ttl-mb);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.Client-header__divider {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--client-clr-accent);
+  margin: 0 auto;
+}
+
+.Client-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--client-gap-v);
+  margin-bottom: 2rem;
+}
+
+.Client-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.Client-overlay-item__img {
+  width: var(--client-img-size-mb);
+  height: var(--client-img-size-mb);
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.Client-item-content__name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+.Client-item-content__position {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--client-clr-text-muted);
+  margin-bottom: 0.6rem;
+}
+
+.Client-item-content__desc {
+  font-size: 0.9rem;
+  color: var(--client-clr-text-desc);
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 959.98px) and (orientation: landscape) {
+  .Client-overlay-item__img {
+    width: var(--client-img-size-dt);
+    height: var(--client-img-size-dt);
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .Client-header__ttl {
+    font-size: var(--client-fz-ttl-dt);
+  }
+
+  .Client-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: var(--client-gap-h);
+    row-gap: 4rem;
+  }
+
+  .Client-overlay-item__img {
+    width: var(--client-img-size-dt);
+    height: var(--client-img-size-dt);
+  }
+}

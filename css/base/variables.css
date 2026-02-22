@@ -101,4 +101,21 @@
   --blog-fz-ttl: 1.6rem;
   --blog-fz-card-ttl: 1rem;
   --blog-fz-desc: 0.9rem;
+
+  --client-bg-overlay: rgba(255, 255, 255, 0.7);
+  --client-clr-accent: #f38181;
+  --client-clr-text-main: #333;
+  --client-clr-text-muted: #999;
+  --client-clr-text-desc: #777;
+
+  --client-img-size-mb: 64px;
+  --client-img-size-dt: 100px;
+
+  --client-header-mg: 3rem;
+  --client-gap-v: 2.5rem;
+  --client-gap-h: 3rem;
+
+  --client-fz-sub: 1.4rem;
+  --client-fz-ttl-mb: 1.6rem;
+  --client-fz-ttl-dt: 2rem;
 }
