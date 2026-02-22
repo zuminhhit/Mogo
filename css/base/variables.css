@@ -80,4 +80,25 @@
   --map-sep-w: 60px;
   --map-sep-h: 3px;
   --map-gap: 0.5rem;
+
+  --blog-clr-accent: #f38181;
+  --blog-clr-secondary: #95e1d3;
+  --blog-clr-text-main: #333;
+  --blog-clr-text-muted: #999;
+  --blog-clr-text-light: #aaa;
+  --blog-clr-border: #eee;
+  --blog-clr-white: #fff;
+
+  --blog-section-pd-mb: 2rem;
+  --blog-section-pd-dt: 3rem;
+  --blog-gap: 3rem;
+  --blog-date-offset-left: -1rem;
+  --blog-date-w: 80px;
+  --blog-date-h: 100px;
+
+  --blog-fw-bold: 700;
+  --blog-fz-sub: 1rem;
+  --blog-fz-ttl: 1.6rem;
+  --blog-fz-card-ttl: 1rem;
+  --blog-fz-desc: 0.9rem;
 }
