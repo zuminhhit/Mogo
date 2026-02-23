@@ -1,5 +1,5 @@
 .Story {
-  padding: 3rem 0;
+  padding: var(--pc-p-section-default);
 }
 
 .Story-container {
@@ -14,14 +14,14 @@
 }
 
 .Story-header__sub-ttl {
-  font-family: var(--story-font-script);
-  font-size: 1rem;
-  color: var(--story-text-dark);
+  font-family: var(--font-family-sub-ttl);
+  font-size: 1.5rem;
+  color: var(--color-font-dark);
   margin-bottom: 1rem;
 }
 
 .Story-header__ttl {
-  font-family: var(--story-font-heading);
+  font-family: var(--font-family-header-ttl);
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -33,16 +33,16 @@
   display: block;
   width: 3rem;
   height: 3px;
-  background: var(--story-primary);
+  background: var(--color-devider);
   margin: 1.25rem auto;
 }
 
 .Story-header__desc {
-  font-family: var(--story-font-body);
+  font-family: var(--font-family-default);
   font-size: 0.9rem;
   font-weight: 300;
   line-height: 1.6;
-  color: var(--story-text-muted);
+  color: var(--color-grey-muted);
 }
 
 .Story-list {
@@ -57,19 +57,19 @@
 
 .Story-item-inner {
   position: relative;
-  background: var(--story-accent);
+  background: var(--color-bg-accent);
 }
 
 .Story-item-media {
   position: relative;
   overflow: hidden;
-  background: var(--story-white);
+  background: var(--color-font-light);
   transform: translate(0, 0);
-  transition: transform var(--story-transition-speed) var(--story-transition-ease);
+  transition: transform var(--transition-speed-default) var(--transition-ease-default);
 }
 
 .Story-item:hover .Story-item-media {
-  transform: translate(var(--story-hover-offset), var(--story-hover-offset));
+  transform: translate(var(--hover-offset-default), var(--hover-offset-default));
 }
 
 .Story-item-media__img {
@@ -81,7 +81,7 @@
 .Story-item-media-overlay {
   position: absolute;
   inset: 0;
-  background: var(--story-overlay-bg);
+  background: var(--color-overlay-bg);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,22 +90,22 @@
   opacity: 0;
   transform: translateY(12px);
   transition:
-    opacity var(--story-transition-speed) var(--story-transition-ease),
-    transform var(--story-transition-speed) var(--story-transition-ease);
+    opacity var(--transition-speed-default) var(--transition-ease-default),
+    transform var(--transition-speed-default) var(--transition-ease-default);
 }
 
 .Story-item-media-overlay__icon {
   font-size: 1.8rem;
-  color: var(--story-white);
+  color: var(--color-font-light);
   opacity: 0;
   transform: translateY(6px);
   transition:
-    opacity 0.25s var(--story-transition-ease) 0.1s,
-    transform 0.25s var(--story-transition-ease) 0.1s;
+    opacity 0.25s var(--transition-ease-default) 0.1s,
+    transform 0.25s var(--transition-ease-default) 0.1s;
 }
 
 .Story-item-media-overlay__text {
-  color: var(--story-white);
+  color: var(--color-font-light);
   font-weight: 600;
   font-size: 1rem;
   letter-spacing: 0.08em;
@@ -113,8 +113,8 @@
   opacity: 0;
   transform: translateY(8px);
   transition:
-    opacity 0.3s var(--story-transition-ease) 0.2s,
-    transform 0.3s var(--story-transition-ease) 0.2s;
+    opacity 0.3s var(--transition-ease-default) 0.2s,
+    transform 0.3s var(--transition-ease-default) 0.2s;
 }
 
 .Story-item:hover .Story-item-media-overlay {
@@ -128,7 +128,7 @@
   transform: translateY(0);
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 960px) {
 	.Story-container {
 		width: 90%;
 	}

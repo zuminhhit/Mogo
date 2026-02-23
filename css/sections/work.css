@@ -1,6 +1,6 @@
 /* ===== Work Section ===== */
 .Work {
-  padding: 4rem 0;
+  padding: var(--pc-p-section-default);
 }
 
 .Work-container {

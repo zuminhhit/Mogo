@@ -1,5 +1,5 @@
 .Services {
-    padding: 3rem 0;
+    padding: var(--pc-p-section-default);
     background: #fff;
 }
 

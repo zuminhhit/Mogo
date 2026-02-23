@@ -2,7 +2,7 @@
   background:
     linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
     url(../../assets/images/feature/design__bg.jpg) center / cover no-repeat;
-  padding: 3rem 0 0;
+  padding: var(--pc-p-section-default) 0;
   margin-bottom: 20px;
 }
 

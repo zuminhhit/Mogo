@@ -38,7 +38,7 @@
   display: block;
   width: 60px;
   height: 3px;
-  background: var(--client-clr-accent);
+  background: var(--color-devider);
   margin: 0 auto;
 }
 
@@ -73,13 +73,13 @@
 .Client-item-content__position {
   font-size: 0.85rem;
   font-style: italic;
-  color: var(--client-clr-text-muted);
+  color: var(--clr-text-muted);
   margin-bottom: 0.6rem;
 }
 
 .Client-item-content__desc {
   font-size: 0.9rem;
-  color: var(--client-clr-text-desc);
+  color: var(--color-grey-muted);
   line-height: 1.6;
 }
 

@@ -1,5 +1,5 @@
 .Stats {
-  background: var(--stats-bg);
+  background: var(--color-bg-accent);
   width: 100%;
 }
 
@@ -12,13 +12,13 @@
   position: relative;
   text-align: center;
   padding: 2.5rem 1rem;
-  color: var(--stats-text);
+  color: var(--color-font-light);
   flex: 1;
 }
 
 .Stats-item__number {
   display: block;
-  font-family: var(--stats-font-main);
+  font-family: var(--font-family-header-ttl);
   font-size: 3rem;
   font-weight: 700;
   line-height: 1;
@@ -44,7 +44,7 @@
   width: auto;
 }
 
-@media screen and(min-width: 960px) {
+@media screen and (min-width: 960px) {
   .Stats-list {
     flex-direction: row;
   }

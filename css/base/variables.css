@@ -1,120 +1,83 @@
 :root {
-  --header-color: #f38181;
-  --font-color: #fff;
-  --backgroud-hero-linear-gradient: linear-gradient(
+  --pc-p-section-default: 3rem 0;
+  --sp-p-section-default: 3rem 0;
+  --color-devider: #f38181;
+  --color-overlay-bg: rgba(243, 129, 129, 0.9);
+  --color-font-light: #fff;
+  --background-hero-linear-gradient: linear-gradient(
       to bottom,
-      rgba(243, 129, 129, 0.8),
+      var(--color-overlay-bg),
       rgba(252, 227, 138, 0.8)
     );
   --container-width: 80%;
   --container-fluid-width: 100%;
-  --transform-default: transform 0.3s ease;
+  --transform-default: transform var(--transition-speed-default) var(--transition-ease-default);
   --hamburger-gap: 8px;
   --hamburger-thickness: 2px;
   --hamburger-width: 24px;
   --section-mg-mb: 3rem;
-
-  --story-primary: #f38181;
-  --story-accent: #95e1d3;
-  --story-text-dark: #333;
-  --story-text-muted: #777;
-  --story-white: #ffffff;
-  --story-overlay-bg: rgba(243, 129, 129, 0.9);
-
-  --story-font-script: 'Kaushan Script', cursive;
-  --story-font-heading: 'Montserrat', sans-serif;
-  --story-font-body: 'Roboto', sans-serif;
-
-  --story-transition-speed: 0.35s;
-  --story-transition-ease: ease;
-  --story-hover-offset: -10px;
-
-  --stats-bg: #95e1d3;
+  --color-bg-accent: #95e1d3;
+  --color-font-dark: #333;
+  --color-grey-muted: #777;
+  --font-family-sub-ttl: 'Kaushan Script', cursive;
+  --font-family-header-ttl: 'Montserrat', sans-serif;
+  --font-family-default: 'Roboto', sans-serif;
+  --transition-speed-default: 0.35s;
+  --transition-ease-default: ease;
+  --hover-offset-default: -10px;
   --stats-divider: rgba(255, 255, 255, 0.4);
-  --stats-text: #ffffff;
-  --stats-font-main: 'Montserrat', sans-serif;
-
-  --social-clr-accent: #95e1d3;
-  --social-clr-text-main: #333;
-  --social-clr-text-muted: #777;
-  --social-clr-text-light: #bbb;
-  --social-clr-text-dim: #ccc;
-  --social-clr-border: #e5e5e5;
-  --social-clr-border-alt: #eee;
-  --social-clr-white: #fff;
-
-  --social-spc-xs: 0.5rem;
-  --social-spc-sm: 1rem;
-  --social-spc-md: 1.5rem;
-  --social-spc-lg: 2rem;
-  --social-spc-xl: 3rem;
-  --social-section-mg-mb: 3rem;
-  --social-section-mg-dt: 4rem;
-
-  --social-fw-bold: 700;
-  --social-fw-semi: 600;
-  --social-fw-light: 300;
-  --social-fz-logo-mb: 2rem;
-  --social-fz-logo-dt: 3rem;
-  --social-fz-stats: 2rem;
-  --social-fz-base: 1rem;
-  --social-fz-small: 13px;
-
+  --color-font-date-light: #bbb;
+  --color-font-more-photo-light: #ccc;
+  --b-color: #e5e5e5;
+  --b-color-alt: #eee;
+  --m-spc-xs: 0.5rem;
+  --m-spc-sm: 1rem;
+  --m-spc-md: 1.5rem;
+  --m-spc-lg: 2rem;
+  --m-spc-xl: 3rem;
+  --m-section-mg-mb: 3rem;
+  --m-section-mg-dt: 4rem;
+  --fw-bold: 700;
+  --fw-semi: 600;
+  --fw-light: 300;
+  --fz-logo-mb: 2rem;
+  --fz-logo-dt: 3rem;
+  --fz-stats: 2rem;
+  --fz-base: 1rem;
+  --fz-small: 13px;
   --social-transition: all 0.3s linear;
-
-  --map-clr-accent: #f38181;
   --map-clr-overlay: rgba(255, 255, 255, 0.75);
-
-  --map-h-mb: 220px;
-  --map-h-ls: 260px;
-  --map-h-dt: 300px;
-
+  --map-h-mb: 50vh;
+  --map-h-ls: 80vh;
+  --map-h-dt: 50vh;
   --map-fz-icon-mb: 2rem;
   --map-fz-icon-ls: 2.3rem;
   --map-fz-icon-dt: 2.6rem;
-
   --map-fz-text-mb: 1.2rem;
   --map-fz-text-ls: 1.4rem;
   --map-fz-text-dt: 1.6rem;
-
   --map-sep-w: 60px;
   --map-sep-h: 3px;
   --map-gap: 0.5rem;
-
-  --blog-clr-accent: #f38181;
-  --blog-clr-secondary: #95e1d3;
-  --blog-clr-text-main: #333;
-  --blog-clr-text-muted: #999;
-  --blog-clr-text-light: #aaa;
-  --blog-clr-border: #eee;
-  --blog-clr-white: #fff;
-
+  --clr-text-muted: #999;
+  --clr-text-light: #aaa;
   --blog-section-pd-mb: 2rem;
   --blog-section-pd-dt: 3rem;
   --blog-gap: 3rem;
   --blog-date-offset-left: -1rem;
   --blog-date-w: 80px;
   --blog-date-h: 100px;
-
   --blog-fw-bold: 700;
   --blog-fz-sub: 1rem;
   --blog-fz-ttl: 1.6rem;
   --blog-fz-card-ttl: 1rem;
   --blog-fz-desc: 0.9rem;
-
   --client-bg-overlay: rgba(255, 255, 255, 0.7);
-  --client-clr-accent: #f38181;
-  --client-clr-text-main: #333;
-  --client-clr-text-muted: #999;
-  --client-clr-text-desc: #777;
-
   --client-img-size-mb: 64px;
   --client-img-size-dt: 100px;
-
   --client-header-mg: 3rem;
   --client-gap-v: 2.5rem;
   --client-gap-h: 3rem;
-
   --client-fz-sub: 1.4rem;
   --client-fz-ttl-mb: 1.6rem;
   --client-fz-ttl-dt: 2rem;

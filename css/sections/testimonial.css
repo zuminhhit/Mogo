@@ -1,6 +1,6 @@
 .Testimonial {
-	margin: 3rem 0;
-	padding: 3rem 0;
+	margin: var(--pc-p-section-default);
+	padding: var(--pc-p-section-default);
 	background: #f8f8f8;
 }
 
@@ -82,7 +82,7 @@
 
 @media screen and (max-width: 959.98px) and (orientation: landscape) {
 	.Testimonial {
-		padding: 4rem 0;
+		padding: var(--pc-p-section-default);
 	}
 
 	.Testimonial-quote {
