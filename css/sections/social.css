@@ -177,11 +177,6 @@
   transition: var(--social-transition);
 }
 
-.Social-item-instagram-list-buttoncase__more:hover {
-  color: var(--color-font-dark);
-  text-decoration: underline;
-}
-
 @media screen and (min-width: 960px) {
   .Social {
     margin: var(--m-section-mg-dt) 0;
@@ -217,5 +212,17 @@
 
   .Social-item-subcriber-list-follow-item__link {
     font-size: 1.2rem;
+  }
+}
+
+@media (hover: hover) {
+  .Social-item-instagram-list-buttoncase__more {
+    color: var(--color-font-dark);
+    text-decoration: underline;
+  }
+
+  .Social-item-subcriber-form__btn:hover {
+    cursor: pointer;
+    background-color: #74c7b8;
   }
 }

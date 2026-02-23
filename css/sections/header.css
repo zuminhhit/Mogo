@@ -6,11 +6,22 @@
   padding: 1rem 0;
   z-index: 100;
   background-color: transparent;
-  transition: background-color 0.3s ease, padding 0.3s ease;
+  transform: translateY(0);
+
+  transition:
+    transform 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.3s ease,
+    padding 0.3s ease;
+
+  will-change: transform;
 }
 
 .Header.is-scrolled {
   background-color: var(--color-devider);
+}
+
+.Header.is-open-modal {
+  transform: translateY(calc(-100% - 8px));
 }
 
 .Header-container {
@@ -30,8 +41,8 @@
   position: fixed;
   top: 60px;
   left: 0;
-  width: 100dvw;
-  height: calc(100dvh - 60px);
+  width: 100%;
+  height: calc(100vh - 60px);
   background: var(--background-hero-linear-gradient);
   transition: var(--transform-default);
   padding: 1.5rem 0 0 0;

@@ -29,7 +29,38 @@ function handleScrollHeader() {
   });
 }
 
+function processMenuHeader() {
+  const menuContainer = document.querySelector(".Header-nav-menu");
+
+  if (!menuContainer) return;
+
+  menuContainer.addEventListener("click", (e) => {
+    const targetLink = e.target.closest(".Header-nav-menu-item__link");
+
+    if (targetLink) {
+      const currentActive = menuContainer.querySelector(".is-active");
+      if (currentActive) {
+        currentActive.classList.remove("is-active");
+      }
+
+      targetLink.classList.add("is-active");
+    }
+  });
+}
+
+function resetNavMenu() {
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".js-reset-nav-menu")) return;
+
+    document
+      .querySelectorAll(".Header-nav-menu-item__link.is-active")
+      .forEach((link) => link.classList.remove("is-active"));
+  });
+}
+
 export default function initHeader() {
   headerToggleHamburger();
   handleScrollHeader();
+  processMenuHeader();
+  resetNavMenu();
 }

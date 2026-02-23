@@ -82,7 +82,7 @@
 
 @media screen and (max-width: 959.98px) and (orientation: landscape) {
 	.Testimonial {
-		padding: var(--pc-p-section-default);
+		padding: 4rem 0;
 	}
 
 	.Testimonial-quote {

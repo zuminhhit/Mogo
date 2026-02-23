@@ -1,6 +1,6 @@
 /* ===== Work Section ===== */
 .Work {
-  padding: var(--pc-p-section-default);
+  padding: 4rem 0;
 }
 
 .Work-container {
@@ -54,9 +54,25 @@
 
 .Work-item__img {
   width: 100%;
-  aspect-ratio: 1/1;
   object-fit: cover;
   display: block;
+}
+
+@media screen and (max-width: 599.98px) and (orientation: portrait) {
+  .Work-list {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+  }
+
+  .Work-item {
+    aspect-ratio: 1 / 1;
+  }
+
+  .Work-item__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 @media screen and (max-width: 959.98px) and (orientation: landscape) {

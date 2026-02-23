@@ -9,6 +9,7 @@
       var(--color-overlay-bg),
       rgba(252, 227, 138, 0.8)
     );
+  --header-height: 80px;
   --container-width: 80%;
   --container-fluid-width: 100%;
   --transform-default: transform var(--transition-speed-default) var(--transition-ease-default);

@@ -44,6 +44,64 @@
   margin: 15px auto 0;
 }
 
+.Map-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 4; /* Map Modal: Higher than Hero, Blog and lower than Header */
+}
+
+.Map-modal.is-open {
+  display: block;
+  top: 0;
+}
+
+.Map-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.Map-modal-dialog {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: min(92vw, 900px);
+  height: min(80vh, 600px);
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 1; /* modal: child of map modal and the lowest */
+}
+
+.Map-modal-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.Map-modal-content__frame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: inline-block;
+}
+
+.Map-modal__close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  z-index: 5; /* close: equal modal content */
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 959.98px) and (orientation: landscape) {
   .Map {
     height: var(--map-h-ls);

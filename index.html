@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -12,16 +14,17 @@
   >
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="css/style.css" rel="stylesheet">
+  <title>Zu Mogo</title>
 </head>
 <body>
-  <header class="Header">
+  <header class="Header" id="Header">
     <div class="Responsive">
       <div class="Header-container">
         <div class="Header-logo">
-          <a href="#" class="Header-logo-link" data-prop44="home-header_01">
+          <a href="#Main" class="Header-logo-link js-reset-nav-menu" data-prop44="home-header_01">
             <img src="assets/icons/logo.png" alt="Logo"
               class="Header-logo-link__img"
-            	loading="eager"
+              loading="eager"
               decoding="sync"
               fetchpriority="high"
               width="86"
@@ -32,29 +35,35 @@
         <nav class="Header-nav">
           <ul class="Header-nav-menu">
             <li class="Header-nav-menu-item">
-              <a class="Header-nav-menu-item__link is-active"
-                href="#" data-prop44="home-header_about_01"
-              >
+              <a class="Header-nav-menu-item__link" href="#About" data-prop44="home-header_about_01">
                 About
               </a>
             </li>
             <li class="Header-nav-menu-item">
-              <a class="Header-nav-menu-item__link" href="#" data-prop44="home-header_service_01">Service</a>
+              <a class="Header-nav-menu-item__link" href="#Service" data-prop44="home-header_service_01">
+                Service
+              </a>
             </li>
             <li class="Header-nav-menu-item">
-              <a  class="Header-nav-menu-item__link" href="#" data-prop44="home-header_work_01">Work</a>
+              <a class="Header-nav-menu-item__link" href="#Work" data-prop44="home-header_work_01">
+                Work
+              </a>
             </li>
             <li class="Header-nav-menu-item">
-              <a class="Header-nav-menu-item__link" href="#" data-prop44="home-header_blog_01">Blog</a>
+              <a class="Header-nav-menu-item__link" href="#Blog" data-prop44="home-header_blog_01">
+                Blog
+              </a>
             </li>
             <li class="Header-nav-menu-item">
-              <a class="Header-nav-menu-item__link" href="#" data-prop44="home-header_contact_01">Contact</a>
+              <a class="Header-nav-menu-item__link" href="#Contact" data-prop44="home-header_contact_01">
+                Contact
+              </a>
             </li>
           </ul>
           <div class="Header-action">
-            <a href="#" class="Header-action-link__cart" data-prop44="home-header_cart_01" aria-label="Cart">
+            <a href="#Cart" class="Header-action-link__cart" data-prop44="home-header_cart_01" aria-label="Cart">
             </a>
-            <a href="#" class="Header-action-link__search" data-prop44="home-header_search_01" aria-label="Search">
+            <a href="#Search" class="Header-action-link__search" data-prop44="home-header_search_01" aria-label="Search">
             </a>
           </div>
         </nav><!-- END PC Header-->
@@ -64,7 +73,7 @@
       </div><!-- END Container-->
     </div><!-- END Responsive -->
   </header><!-- END Header -->
-  <main class="Main">
+  <main class="Main" id="Main">
     <section class="Hero">
       <div class="Hero-container js-hold-slider">
         <div class="Hero-slider js-toggle-slider is-active">
@@ -74,7 +83,14 @@
             MoGo
           </h1>
           <span class="Hero-slider__line"></span>
-          <a href="#" class="Hero-slider__btn" data-prop44="home-hero-slider-01_learn_more_01">Learn More</a>
+          <a href="https://www.google.com/"
+            class="Hero-slider__btn"
+            data-prop44="home-hero-slider-01_learn_more_01"
+            target="_blank"
+            rel="external nofollow noopener noreferrer"
+          >
+            Learn More
+          </a>
         </div>
         <div class="Hero-slider js-toggle-slider">
           <p class="Hero-slider__subtitle">Creative Template</p>
@@ -83,7 +99,14 @@
             MoGo1
           </h1>
           <span class="Hero-slider__line"></span>
-          <a href="#" class="Hero-slider__btn" data-prop44="home-hero-slider-02_learn_more_01">Learn More</a>
+          <a href="https://www.google.com/"
+            class="Hero-slider__btn"
+            data-prop44="home-hero-slider-02_learn_more_01"
+            target="_blank"
+            rel="external nofollow noopener noreferrer"
+          >
+            Learn More
+          </a>
         </div>
         <div class="Hero-slider js-toggle-slider">
           <p class="Hero-slider__subtitle">Creative Template</p>
@@ -92,7 +115,14 @@
             MoGo2
           </h1>
           <span class="Hero-slider__line"></span>
-          <a href="#" class="Hero-slider__btn" data-prop44="home-hero-slider-03_learn_more_01">Learn More</a>
+          <a href="https://www.google.com/"
+            class="Hero-slider__btn"
+            data-prop44="home-hero-slider-03_learn_more_01"
+            target="_blank"
+            rel="external nofollow noopener noreferrer"
+          >
+            Learn More
+          </a>
         </div>
         <div class="Hero-slider js-toggle-slider">
           <p class="Hero-slider__subtitle">Creative Template</p>
@@ -101,7 +131,14 @@
             MoGo3
           </h1>
           <span class="Hero-slider__line"></span>
-          <a href="#" class="Hero-slider__btn" data-prop44="home-hero-slider-04_learn_more_01">Learn More</a>
+          <a href="https://www.google.com/"
+            class="Hero-slider__btn"
+            data-prop44="home-hero-slider-04_learn_more_01"
+            target="_blank"
+            rel="external nofollow noopener noreferrer"
+          >
+            Learn More
+          </a>
         </div>
       </div><!-- END Hero Container-->
       <div class="Hero-pagination">
@@ -122,26 +159,31 @@
           <span class="Hero-page__text">Contacts</span>
         </div>
       </div>
-      <button class="Hero-arrow Hero-arrow--prev js-hero-prev" aria-label="Previous slider" data-prop44="home-hero-slider_prev_01"></button>
-      <button class="Hero-arrow Hero-arrow--next js-hero-next" aria-label="Next slider" data-prop44="home-hero-slider-next_01"></button>
+      <button class="Hero-arrow Hero-arrow--prev js-hero-prev"
+        aria-label="Previous slider"
+        data-prop44="home-hero-slider_prev_01">
+      </button>
+      <button class="Hero-arrow Hero-arrow--next js-hero-next"
+        aria-label="Next slider"
+        data-prop44="home-hero-slider-next_01">
+      </button>
     </section><!--END Hero -->
-    <section class="Story">
+    <section class="Story" id="About">
       <div class="Story-container">
         <div class="Story-header">
           <p class="Story-header__sub-ttl">What we do</p>
           <h2 class="Story-header__ttl">Story About Us</h2>
           <span class="Story-header__divider"></span>
           <p class="Story-header__desc">
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
         </div><!-- END Story Header -->
         <div class="Story-list">
           <article class="Story-item">
             <div class="Story-item-inner">
               <div class="Story-item-media">
-                <img
-                  src="assets/images/story/1.webp"
-                  alt=""
+                <img src="assets/images/story/1.webp"
+                  alt="Story 1"
                   class="Story-item-media__img"
                   loading="lazy"
                   decoding="async"
@@ -229,7 +271,7 @@
         </div>
       </div>
     </section><!-- END Stats -->
-    <section class="Services">
+    <section class="Services" id="Service">
       <div class="Services-container">
         <div class="Services-header">
           <p class="Services-header__sub-ttl">We Work With</p>
@@ -321,8 +363,8 @@
               loading="lazy"
               decoding="async"
               fetchpriority="low"
-              width="387"
-              height="472"
+              width="477"
+              height="582"
             />
           </div>
           <div class="Device-item">
@@ -332,14 +374,14 @@
               loading="lazy"
               decoding="async"
               fetchpriority="low"
-              width="270"
-              height="469"
+              width="274"
+              height="476"
             />
           </div>
         </div>
       </div>
     </section><!-- END Devices -->
-    <section class="Work">
+    <section class="Work" id="Work">
       <div class="Work-container">
         <div class="Work-header">
           <p class="Work-header__sub">What we do</p>
@@ -352,7 +394,14 @@
         </div>
         <div class="Work-list">
           <div class="Work-item">
-            <img class="Work-item__img" src="assets/images/work/1.jpg" alt="">
+            <img class="Work-item__img" src="assets/images/work/1.jpg"
+              alt="Work 1"
+              loading="lazy"
+              decoding="async"
+              fetchpriority="low"
+              width="480"
+              height="390"
+            >
               <div class="Work-item-overlay">
                 <div class="Work-item-overlay__icon">
                   <i class="fa fa-lightbulb-o"></i>
@@ -362,7 +411,14 @@
             </div>
           </div>
           <div class="Work-item">
-            <img class="Work-item__img" src="assets/images/work/2.jpg" alt="">
+            <img class="Work-item__img" src="assets/images/work/2.jpg"
+              alt="Work 2"
+              loading="lazy"
+              decoding="async"
+              fetchpriority="low"
+              width="480"
+              height="390"
+            >
               <div class="Work-item-overlay">
                 <div class="Work-item-overlay__icon">
                   <i class="fa fa-lightbulb-o"></i>
@@ -372,53 +428,91 @@
             </div>
           </div>
           <div class="Work-item">
-            <img class="Work-item__img" src="assets/images/work/3.jpg" alt="">
-              <div class="Work-item-overlay">
-                <div class="Work-item-overlay__icon">
-                  <i class="fa fa-lightbulb-o"></i>
-                </div>
-                <h3 class="Work-item-overlay__title">Creatively Designed</h3>
-                <p class="Work-item-overlay__desc">Lorem ipsum dolor sit</p>
+            <img class="Work-item__img"
+              src="assets/images/work/3.jpg"
+              alt="Work 3"
+              loading="lazy"
+              decoding="async"
+              fetchpriority="low"
+              width="480"
+              height="780"
+            >
+            <div class="Work-item-overlay">
+              <div class="Work-item-overlay__icon">
+                <i class="fa fa-lightbulb-o"></i>
+              </div>
+              <h3 class="Work-item-overlay__title">Creatively Designed</h3>
+              <p class="Work-item-overlay__desc">Lorem ipsum dolor sit</p>
             </div>
           </div>
           <div class="Work-item">
-            <img class="Work-item__img" src="assets/images/work/4.jpg" alt="">
-              <div class="Work-item-overlay">
-                <div class="Work-item-overlay__icon">
-                  <i class="fa fa-lightbulb-o"></i>
-                </div>
-                <h3 class="Work-item-overlay__title">Creatively Designed</h3>
-                <p class="Work-item-overlay__desc">Lorem ipsum dolor sit</p>
+            <img class="Work-item__img"
+              src="assets/images/work/4.jpg"
+              alt="Work 4"
+              loading="lazy"
+              decoding="async"
+              fetchpriority="low"
+              width="480"
+              height="390"
+            >
+            <div class="Work-item-overlay">
+              <div class="Work-item-overlay__icon">
+                <i class="fa fa-lightbulb-o"></i>
+              </div>
+              <h3 class="Work-item-overlay__title">Creatively Designed</h3>
+              <p class="Work-item-overlay__desc">Lorem ipsum dolor sit</p>
             </div>
           </div>
           <div class="Work-item">
-            <img class="Work-item__img" src="assets/images/work/5.jpg" alt="">
-              <div class="Work-item-overlay">
-                <div class="Work-item-overlay__icon">
-                  <i class="fa fa-lightbulb-o"></i>
-                </div>
-                <h3 class="Work-item-overlay__title">Creatively Designed</h3>
-                <p class="Work-item-overlay__desc">Lorem ipsum dolor sit</p>
+            <img class="Work-item__img"
+              src="assets/images/work/5.jpg"
+              alt="Work 5"
+              loading="lazy"
+              decoding="async"
+              fetchpriority="low"
+              width="480"
+              height="390"
+            >
+            <div class="Work-item-overlay">
+              <div class="Work-item-overlay__icon">
+                <i class="fa fa-lightbulb-o"></i>
+              </div>
+              <h3 class="Work-item-overlay__title">Creatively Designed</h3>
+              <p class="Work-item-overlay__desc">Lorem ipsum dolor sit</p>
             </div>
           </div>
           <div class="Work-item">
-            <img class="Work-item__img" src="assets/images/work/6.jpg" alt="">
-              <div class="Work-item-overlay">
-                <div class="Work-item-overlay__icon">
-                  <i class="fa fa-lightbulb-o"></i>
-                </div>
-                <h3 class="Work-item-overlay__title">Creatively Designed</h3>
-                <p class="Work-item-overlay__desc">Lorem ipsum dolor sit</p>
+            <img class="Work-item__img" src="assets/images/work/6.jpg"
+              alt="Work 6"
+              loading="lazy"
+              decoding="async"
+              fetchpriority="low"
+              width="480"
+              height="390"
+            >
+            <div class="Work-item-overlay">
+              <div class="Work-item-overlay__icon">
+                <i class="fa fa-lightbulb-o"></i>
+              </div>
+              <h3 class="Work-item-overlay__title">Creatively Designed</h3>
+              <p class="Work-item-overlay__desc">Lorem ipsum dolor sit</p>
             </div>
           </div>
           <div class="Work-item">
-            <img class="Work-item__img" src="assets/images/work/7.jpg" alt="">
-              <div class="Work-item-overlay">
-                <div class="Work-item-overlay__icon">
-                  <i class="fa fa-lightbulb-o"></i>
-                </div>
-                <h3 class="Work-item-overlay__title">Creatively Designed</h3>
-                <p class="Work-item-overlay__desc">Lorem ipsum dolor sit</p>
+            <img class="Work-item__img" src="assets/images/work/7.jpg"
+              alt="Work 7"
+              loading="lazy"
+              decoding="async"
+              fetchpriority="low"
+              width="480"
+              height="390"
+            >
+            <div class="Work-item-overlay">
+              <div class="Work-item-overlay__icon">
+                <i class="fa fa-lightbulb-o"></i>
+              </div>
+              <h3 class="Work-item-overlay__title">Creatively Designed</h3>
+              <p class="Work-item-overlay__desc">Lorem ipsum dolor sit</p>
             </div>
           </div>
         </div>
@@ -426,10 +520,16 @@
     </section><!-- END Work -->
     <section class="Testimonial">
       <div class="Testimonial-container">
-        <button class="Testimonial-arrow Testimonial-arrow--prev js-testimonial-prev" aria-label="Previous slider" data-prop44="home-testimonial-slider_prev_01">
+        <button class="Testimonial-arrow Testimonial-arrow--prev js-testimonial-prev"
+          aria-label="Previous slider"
+          data-prop44="home-testimonial-slider_prev_01"
+        >
           <i class="fa-solid fa-angle-left"></i>
         </button>
-        <button class="Testimonial-arrow Testimonial-arrow--next js-testimonial-next" aria-label="Next slider" data-prop44="home-testimonial-slider_next_01">
+        <button class="Testimonial-arrow Testimonial-arrow--next js-testimonial-next"
+          aria-label="Next slider"
+          data-prop44="home-testimonial-slider_next_01"
+        >
           <i class="fa-solid fa-angle-right"></i>
         </button>
         <div class="Testimonial-viewport">
@@ -477,7 +577,15 @@
         </div>
         <div class="Client-list">
           <div class="Client-item">
-            <img src="assets/images/client/cl1.jpg" alt="Client 1" class="Client-overlay-item__img">
+            <img src="assets/images/client/cl1.jpg"
+              class="Client-overlay-item__img"
+              alt="Client 1"
+              loading="lazy"
+              decoding="async"
+              fetchpriority="low"
+              width="110"
+              height="110"
+            >
             <div class="Client-item-content">
               <div class="Client-item-content__name">
                 Mathew Dix
@@ -492,7 +600,15 @@
             </div>
           </div>
           <div class="Client-item">
-            <img src="assets/images/client/cl2.jpg" alt="Client 1" class="Client-overlay-item__img">
+            <img src="assets/images/client/cl2.jpg"
+              class="Client-overlay-item__img"
+              alt="Client 2"
+              loading="lazy"
+              decoding="async"
+              fetchpriority="low"
+              width="110"
+              height="110"
+            >
             <div class="Client-item-content">
               <div class="Client-item-content__name">
                 Mathew Dix
@@ -507,7 +623,15 @@
             </div>
           </div>
           <div class="Client-item">
-            <img src="assets/images/client/cl3.jpg" alt="Client 1" class="Client-overlay-item__img">
+            <img src="assets/images/client/cl3.jpg"
+              class="Client-overlay-item__img"
+              alt="Client 3"
+              loading="lazy"
+              decoding="async"
+              fetchpriority="low"
+              width="110"
+              height="110"
+            >
             <div class="Client-item-content">
               <div class="Client-item-content__name">
                 Mathew Dix
@@ -522,7 +646,15 @@
             </div>
           </div>
           <div class="Client-item">
-            <img src="assets/images/client/cl4.jpg" alt="Client 1" class="Client-overlay-item__img">
+            <img src="assets/images/client/cl4.jpg"
+              class="Client-overlay-item__img"
+              alt="Client 4"
+              loading="lazy"
+              decoding="async"
+              fetchpriority="low"
+              width="110"
+              height="110"
+            >
             <div class="Client-item-content">
               <div class="Client-item-content__name">
                 Mathew Dix
@@ -539,7 +671,7 @@
         </div>
       </div>
     </section><!-- END Client -->
-    <section class="Blog">
+    <section class="Blog" id="Blog">
       <div class="Blog-container">
         <div class="Blog-header">
           <p class="Blog-header__sub-ttl">Our stories</p>
@@ -548,9 +680,23 @@
         </div>
         <ul class="Blog-list">
           <li class="Blog-item">
-            <a href="#" class="Blog-card">
+            <a href="https://fptshop.com.vn/tin-tuc/danh-gia/faq-la-gi-vai-tro-cua-faq-voi-website-181846"
+              class="Blog-card"
+              aria-label="FAQ"
+              target="_blank"
+              rel="help"
+              data-prop44="blog_fpt-news-rate-faq_01"
+            >
               <div class="Blog-card-media">
-                <img src="assets/images/blog/blog1.jpg" alt="" class="Blog-card-media__img">
+                <img src="assets/images/blog/blog1.jpg"
+                  class="Blog-card-media__img"
+                  alt="Blog 1"
+                  loading="lazy"
+                  decoding="async"
+                  fetchpriority="low"
+                  width="380"
+                  height="240"
+                >
                 <span class="Blog-card-date">
                   <div class="Blog-card-date__day">15</div>
                   <div class="Blog-card-date__month">Jan</div>
@@ -575,9 +721,22 @@
             </a>
           </li>
           <li class="Blog-item">
-            <a href="#" class="Blog-card">
+            <a href="https://spiderum.com/bai-dang/Mot-vai-trang-blog-hay-hay-aVADmXLjfSwY"
+              class="Blog-card"
+              target="_blank"
+              rel="external nofollow noopener noreferrer"
+              data-prop44="blog_spiderum-post_01"
+            >
               <div class="Blog-card-media">
-                <img src="assets/images/blog/blog2.jpg" alt="" class="Blog-card-media__img">
+                <img src="assets/images/blog/blog2.jpg"
+                  class="Blog-card-media__img"
+                  alt="Blog 2"
+                  loading="lazy"
+                  decoding="async"
+                  fetchpriority="low"
+                  width="380"
+                  height="240"
+                >
                 <span class="Blog-card-date">
                   <div class="Blog-card-date__day">15</div>
                   <div class="Blog-card-date__month">Jan</div>
@@ -602,9 +761,22 @@
             </a>
           </li>
           <li class="Blog-item">
-            <a href="#" class="Blog-card">
+            <a href="https://spiderum.com/bai-dang/Mot-vai-trang-blog-hay-hay-aVADmXLjfSwY"
+              class="Blog-card"
+              target="_blank"
+              rel="external nofollow noopener noreferrer"
+              data-prop44="blog_spiderum-post_02"
+            >
               <div class="Blog-card-media">
-                <img src="assets/images/blog/blog3.jpg" alt="" class="Blog-card-media__img">
+                <img src="assets/images/blog/blog3.jpg"
+                  class="Blog-card-media__img"
+                  alt="Blog 3"
+                  loading="lazy"
+                  decoding="async"
+                  fetchpriority="low"
+                  width="380"
+                  height="240"
+                >
                 <span class="Blog-card-date">
                   <div class="Blog-card-date__day">15</div>
                   <div class="Blog-card-date__month">Jan</div>
@@ -633,15 +805,38 @@
     </section><!-- END Blog-->
     <section class="Map">
       <div class="Map-overlay">
-        <a href="#" class="Map-overlay-link" aria-label="Open map">
+        <a href="javascript:void(0);"
+          class="Map-overlay-link js-open-map"
+          aria-label="Open map Ho Tay"
+          data-prop44="home_map_01"
+        >
           <span class="Map-overlay-icon">
             <i class="fa-solid fa-location-dot"></i>
           </span>
           <span class="Map-overlay__text">OPEN MAP</span>
         </a>
-      </div>
+      </div><!-- END Map Overlay -->
+      <div class="Map-modal" id="mapModal" aria-hidden="true">
+        <div class="Map-modal__backdrop"></div>
+        <div class="Map-modal-dialog" role="dialog" aria-modal="true">
+          <button class="Map-modal__close" aria-label="Close map" data-prop44="home_map-modal-close_01">&times;</button>
+          <div class="Map-modal-content">
+            <iframe class="Map-modal-content__frame"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14893.462760280469!2d105.81352216334979!3d21.05805171434199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aafe7260066b%3A0x4c2c988309aaa3db!2zSOG7kyBUw6J5!5e0!3m2!1svi!2s!4v1771836006276!5m2!1svi!2s"
+              width="600"
+              height="450"
+              allowfullscreen=""
+              loading="lazy"
+              decoding="async"
+              sandbox="allow-scripts allow-same-origin allow-popups"
+              fetchpriority="low"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div><!-- END Map Modal -->
     </section><!-- END Map -->
-    <section class="Social">
+    <section class="Social" id="Contact">
       <div class="Social-container">
         <ul class="Social-list">
           <li class="Social-item-subcriber">
@@ -658,58 +853,115 @@
             <ul class="Social-item-subcriber-list-follow">
               <li class="Social-item-subcriber-list-follow-proposal">Follow Us:</li>
               <li class="Social-item-subcriber-list-follow-item">
-                <a href="#" class="Social-item-subcriber-list-follow-item__link" data-prop44="home-social_subscriber_facebook_01" aria-label="Facebook">
+                <a href="http://fb.com"
+                  class="Social-item-subcriber-list-follow-item__link"
+                  data-prop44="home_social-subscriber-facebook_01" aria-label="Facebook"
+                  target="_blank"
+                  rel="external nofollow noopener noreferrer"
+                >
                   <i class="fa-brands fa-facebook-f"></i>
                 </a>
               </li>
               <li class="Social-item-subcriber-list-follow-item">
-                <a href="#" class="Social-item-subcriber-list-follow-item__link" data-prop44="home-social_subscriber_twitter_01" aria-label="Twitter">
+                <a href="https://x.com" class="Social-item-subcriber-list-follow-item__link"
+                  data-prop44="home_social-subscriber-twitter_01" aria-label="Twitter"
+                  target="_blank"
+                  rel="external nofollow noopener noreferrer"
+                >
                   <i class="fa-brands fa-twitter"></i>
                 </a>
               </li>
               <li class="Social-item-subcriber-list-follow-item">
-                <a href="#" class="Social-item-subcriber-list-follow-item__link" data-prop44="home-social_subscriber_linkedin_01" aria-label="LinkedIn">
+                <a href="https://www.instagram.com" class="Social-item-subcriber-list-follow-item__link"
+                  data-prop44="home_social-subscriber-instagram_01" aria-label="Instagram"
+                  target="_blank"
+                  rel="external nofollow noopener noreferrer"
+                >
                   <i class="fa-brands fa-square-instagram"></i>
                 </a>
               </li>
               <li class="Social-item-subcriber-list-follow-item">
-                <a href="#" class="Social-item-subcriber-list-follow-item__link" data-prop44="home-social_subscriber_facebook_01" aria-label="Facebook">
+                <a href="https://www.pinterest.com" class="Social-item-subcriber-list-follow-item__link"
+                  data-prop44="home_social-subscriber-pinterest_01" aria-label="Pinterest"
+                  target="_blank"
+                  rel="external nofollow noopener noreferrer"
+                >
                   <i class="fa-brands fa-pinterest"></i>
                 </a>
               </li>
               <li class="Social-item-subcriber-list-follow-item">
-                <a href="#" class="Social-item-subcriber-list-follow-item__link" data-prop44="home-social_subscriber_twitter_01" aria-label="Twitter">
+                <a href="https://www.google.com"
+                  class="Social-item-subcriber-list-follow-item__link"
+                  data-prop44="home_social-subscriber-google_01" aria-label="Google"
+                  target="_blank"
+                  rel="external nofollow noopener noreferrer"
+                >
                   <i class="fa-brands fa-google-plus"></i>
                 </a>
               </li>
               <li class="Social-item-subcriber-list-follow-item">
-                <a href="#" class="Social-item-subcriber-list-follow-item__link" data-prop44="home-social_subscriber_linkedin_01" aria-label="LinkedIn">
+                <a href="https://www.wilsonsports.com.vn/collections/basketball-nba?srsltid=AfmBOoptG1XhS-QXIxkNeK3owXJ7-HzdCVa3YM8YxKAp17u1GyZENt6p" class="Social-item-subcriber-list-follow-item__link"
+                  data-prop44="home_social-subscriber-basketball_01"
+                  aria-label="Basket Ball"
+                  target="_blank"
+                  rel="external nofollow noopener noreferrer"
+                >
                   <i class="fa-solid fa-basketball"></i>
                 </a>
               </li>
               <li class="Social-item-subcriber-list-follow-item">
-                <a href="#" class="Social-item-subcriber-list-follow-item__link" data-prop44="home-social_subscriber_facebook_01" aria-label="Facebook">
+                <a href="https://www.youtube.com"
+                  class="Social-item-subcriber-list-follow-item__link"
+                  data-prop44="home_social-subscriber-youtube_01"
+                  aria-label="Youtube"
+                  target="_blank"
+                  rel="external nofollow noopener noreferrer"
+                >
                   <i class="fa-brands fa-youtube"></i>
                 </a>
               </li>
               <li class="Social-item-subcriber-list-follow-item">
-                <a href="#" class="Social-item-subcriber-list-follow-item__link" data-prop44="home-social_subscriber_twitter_01" aria-label="Twitter">
+                <a href="https://www.tumblr.com"
+                  class="Social-item-subcriber-list-follow-item__link"
+                  data-prop44="home_social-subscriber-tumblr_01"
+                  aria-label="Tumblr"
+                  target="_blank"
+                  rel="external nofollow noopener noreferrer"
+                >
                   <i class="fa-brands fa-tumblr"></i>
                 </a>
               </li>
             </ul>
             <form action="" class="Social-item-subcriber-form">
               <input type="text" class="Social-item-subcriber-form__input" placeholder="Your Email..."/>
-              <button class="Social-item-subcriber-form__btn">Subscribe</button>
+              <button type="button" class="Social-item-subcriber-form__btn"
+                data-prop44="home_social-form_01"
+              >
+                Subscribe
+              </button>
             </form>
           </li>
           <li class="Social-item-publication">
             <h4 class="Social-item-publication__ttl">Blogs</h4>
             <ul class="Social-item-publication-list">
               <li class="Social-item-publication-item">
-                  <a href="#" class="Social-item-publication-item-link" data-prop44="home-social_publication_blog1_01">
+                  <a href="https://vnexpress.net"
+                    class="Social-item-publication-item-link"
+                    data-prop44="home_social-publication-blog1_01"
+                    aria-label="Blog 1"
+                    target="_blank"
+                    rel="external nofollow noopener noreferrer"
+                  >
                     <div class="Social-item-publication-item-link-photo">
-                      <img src="assets/images/footer-blog/1.webp" alt="" class="Social-item-publication-item-link-photo__img">
+                      <img src="assets/images/footer-blog/1.webp"
+                        class="Social-item-publication-item-link-photo__img"
+                        alt="Blog 1"
+                        loading="lazy"
+                        decoding="async"
+                        fetchpriority="low"
+                        width="120"
+                        height="80"
+                      >
                     </div>
                     <div class="Social-item-publication-item-link__content">
                       <h5 class="Social-item-publication-item-link__ttl">Lorem ipsum dolor sit amet,
@@ -719,9 +971,22 @@
                   </a>
               </li>
               <li class="Social-item-publication-item">
-                  <a href="#" class="Social-item-publication-item-link" data-prop44="home-social_publication_blog1_01">
+                  <a href="https://vnexpress.net" class="Social-item-publication-item-link"
+                    data-prop44="home_social-publication-blog2_01"
+                    aria-label="Blog 2"
+                    target="_blank"
+                    rel="external nofollow noopener noreferrer"
+                  >
                     <div class="Social-item-publication-item-link-photo">
-                      <img src="assets/images/footer-blog/2.webp" alt="" class="Social-item-publication-item-link-photo__img">
+                      <img src="assets/images/footer-blog/2.webp"
+                        class="Social-item-publication-item-link-photo__img"
+                        alt="Blog 2"
+                        loading="lazy"
+                        decoding="async"
+                        fetchpriority="low"
+                        width="120"
+                        height="80"
+                      >
                     </div>
                     <div class="Social-item-publication-item-link__content">
                       <h5 class="Social-item-publication-item-link__ttl">Consectetur adipiscing elit,
@@ -731,9 +996,22 @@
                   </a>
               </li>
               <li class="Social-item-publication-item">
-                  <a href="#" class="Social-item-publication-item-link" data-prop44="home-social_publication_blog1_01">
+                  <a href="https://vnexpress.net" class="Social-item-publication-item-link"
+                    data-prop44="home_social-publication-blog3_01"
+                    aria-label="Blog 3"
+                    target="_blank"
+                    rel="external nofollow noopener noreferrer"
+                  >
                     <div class="Social-item-publication-item-link-photo">
-                      <img src="assets/images/footer-blog/3.webp" alt="" class="Social-item-publication-item-link-photo__img">
+                      <img src="assets/images/footer-blog/3.webp"
+                        class="Social-item-publication-item-link-photo__img"
+                        alt="Blog 3"
+                        loading="lazy"
+                        decoding="async"
+                        fetchpriority="low"
+                        width="120"
+                        height="80"
+                      >
                     </div>
                     <div class="Social-item-publication-item-link__content">
                       <h5 class="Social-item-publication-item-link__ttl">sed do eiusmod tempor
@@ -748,59 +1026,183 @@
             <h4 class="Social-item-instagram__ttl">Instagram</h4>
             <ul class="Social-item-instagram-list">
               <li class="Social-item-instagram-item">
-                <a href="#" class="Social-item-instagram-item-link" data-prop44="home-social_instagram_01">
-                  <img src="assets/images/footer-instagram/1.webp" alt="" class="Social-item-instagram-item-link__img">
+                <a href="https://www.instagram.com"
+                  class="Social-item-instagram-item-link"
+                  data-prop44="home_social-instagram_01"
+                  aria-label="Instagram Image 1"
+                  target="_blank"
+                  rel="external nofollow noopener noreferrer"
+                >
+                  <img src="assets/images/footer-instagram/1.webp" class="Social-item-instagram-item-link__img"
+                    alt="Instagram Image 1"
+                    loading="lazy"
+                    decoding="async"
+                    fetchpriority="low"
+                    width="88"
+                    height="88"
+                  >
                 </a>
               </li>
               <li class="Social-item-instagram-item">
-                <a href="#" class="Social-item-instagram-item-link" data-prop44="home-social_instagram_01">
-                  <img src="assets/images/footer-instagram/2.webp" alt="" class="Social-item-instagram-item-link__img">
+                <a href="https://www.instagram.com"
+                  class="Social-item-instagram-item-link"
+                  data-prop44="home_social-instagram_02"
+                  aria-label="Instagram Image 2"
+                  target="_blank"
+                  rel="external nofollow noopener noreferrer"
+                >
+                  <img src="assets/images/footer-instagram/2.webp" class="Social-item-instagram-item-link__img"
+                    alt="Instagram Image 2"
+                    loading="lazy"
+                    decoding="async"
+                    fetchpriority="low"
+                    width="88"
+                    height="88"
+                  >
                 </a>
               </li>
               <li class="Social-item-instagram-item">
-                <a href="#" class="Social-item-instagram-item-link" data-prop44="home-social_instagram_01">
-                  <img src="assets/images/footer-instagram/3.webp" alt="" class="Social-item-instagram-item-link__img">
+                <a href="https://www.instagram.com"
+                  class="Social-item-instagram-item-link"
+                  data-prop44="home_social-instagram_03"
+                  aria-label="Instagram Image 3"
+                  target="_blank"
+                  rel="external nofollow noopener noreferrer"
+                >
+                  <img src="assets/images/footer-instagram/3.webp" class="Social-item-instagram-item-link__img"
+                    alt="Instagram Image 3"
+                    loading="lazy"
+                    decoding="async"
+                    fetchpriority="low"
+                    width="88"
+                    height="88"
+                  >
                 </a>
               </li>
               <li class="Social-item-instagram-item">
-                <a href="#" class="Social-item-instagram-item-link" data-prop44="home-social_instagram_01">
-                  <img src="assets/images/footer-instagram/4.webp" alt="" class="Social-item-instagram-item-link__img">
+                <a href="https://www.instagram.com"
+                  class="Social-item-instagram-item-link"
+                  data-prop44="home_social-instagram_04"
+                  aria-label="Instagram Image 4"
+                  target="_blank"
+                  rel="external nofollow noopener noreferrer"
+                >
+                  <img src="assets/images/footer-instagram/4.webp" class="Social-item-instagram-item-link__img"
+                    alt="Instagram Image 4"
+                    loading="lazy"
+                    decoding="async"
+                    fetchpriority="low"
+                    width="88"
+                    height="88"
+                  >
                 </a>
               </li>
               <li class="Social-item-instagram-item">
-                <a href="#" class="Social-item-instagram-item-link" data-prop44="home-social_instagram_01">
-                  <img src="assets/images/footer-instagram/5.webp" alt="" class="Social-item-instagram-item-link__img">
+                <a href="https://www.instagram.com"
+                  class="Social-item-instagram-item-link"
+                  data-prop44="home_social-instagram_05"
+                  aria-label="Instagram Image 5"
+                  target="_blank"
+                  rel="external nofollow noopener noreferrer"
+                >
+                  <img src="assets/images/footer-instagram/5.webp" class="Social-item-instagram-item-link__img"
+                    alt="Instagram Image 5"
+                    loading="lazy"
+                    decoding="async"
+                    fetchpriority="low"
+                    width="88"
+                    height="88"
+                  >
                 </a>
               </li>
               <li class="Social-item-instagram-item">
-                <a href="#" class="Social-item-instagram-item-link" data-prop44="home-social_instagram_01">
-                  <img src="assets/images/footer-instagram/6.webp" alt="" class="Social-item-instagram-item-link__img">
+                <a href="https://www.instagram.com"
+                  class="Social-item-instagram-item-link"
+                  data-prop44="home_social-instagram_06"
+                  aria-label="Instagram Image 6"
+                  target="_blank"
+                  rel="external nofollow noopener noreferrer"
+                >
+                  <img src="assets/images/footer-instagram/6.webp" class="Social-item-instagram-item-link__img"
+                    alt="Instagram Image 6"
+                    loading="lazy"
+                    decoding="async"
+                    fetchpriority="low"
+                    width="88"
+                    height="88"
+                  >
                 </a>
               </li>
               <li class="Social-item-instagram-item">
-                <a href="#" class="Social-item-instagram-item-link" data-prop44="home-social_instagram_01">
-                  <img src="assets/images/footer-instagram/7.webp" alt="" class="Social-item-instagram-item-link__img">
+                <a href="https://www.instagram.com"
+                  class="Social-item-instagram-item-link"
+                  data-prop44="home_social-instagram_07"
+                  aria-label="Instagram Image 7"
+                  target="_blank"
+                  rel="external nofollow noopener noreferrer"
+                >
+                  <img src="assets/images/footer-instagram/7.webp" class="Social-item-instagram-item-link__img"
+                    alt="Instagram Image 7"
+                    loading="lazy"
+                    decoding="async"
+                    fetchpriority="low"
+                    width="88"
+                    height="88"
+                  >
                 </a>
               </li>
               <li class="Social-item-instagram-item">
-                <a href="#" class="Social-item-instagram-item-link" data-prop44="home-social_instagram_01">
-                  <img src="assets/images/footer-instagram/8.webp" alt="" class="Social-item-instagram-item-link__img">
+                <a href="https://www.instagram.com"
+                  class="Social-item-instagram-item-link"
+                  data-prop44="home_social-instagram_08"
+                  aria-label="Instagram Image 8"
+                  target="_blank"
+                  rel="external nofollow noopener noreferrer"
+                >
+                  <img src="assets/images/footer-instagram/8.webp" class="Social-item-instagram-item-link__img"
+                    alt="Instagram Image 8"
+                    loading="lazy"
+                    decoding="async"
+                    fetchpriority="low"
+                    width="88"
+                    height="88"
+                  >
                 </a>
               </li>
               <li class="Social-item-instagram-item">
-                <a href="#" class="Social-item-instagram-item-link" data-prop44="home-social_instagram_01">
-                  <img src="assets/images/footer-instagram/9.webp" alt="" class="Social-item-instagram-item-link__img">
+                <a href="https://www.instagram.com"
+                  class="Social-item-instagram-item-link"
+                  data-prop44="home_social-instagram_09"
+                  aria-label="Instagram Image 9"
+                  target="_blank"
+                  rel="external nofollow noopener noreferrer"
+                >
+                  <img src="assets/images/footer-instagram/9.webp" class="Social-item-instagram-item-link__img"
+                    alt="Instagram Image 9"
+                    loading="lazy"
+                    decoding="async"
+                    fetchpriority="low"
+                    width="88"
+                    height="88"
+                  >
                 </a>
               </li>
             </ul>
             <div class="Social-item-instagram-buttoncase">
-              <a href="#" class="Social-item-instagram-list-buttoncase__more">View more photos</a>
+              <a href="https://www.instagram.com" class="Social-item-instagram-list-buttoncase__more"
+                data-prop44="home_social-instagram-home_01"
+                aria-label="Instagram"
+                target="_blank"
+                rel="external nofollow noopener noreferrer"
+              >
+                View more photos
+              </a>
             </div>
+          </li>
         </ul>
       </div>
     </section><!-- END Social -->
   </main>
-
   <footer class="Footer">
     <div class="Footer-copyright">
       &copy; <span id="current-year"></span> MoGo. All rights reserved by
