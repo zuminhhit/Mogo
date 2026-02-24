@@ -83,4 +83,17 @@
   --client-fz-sub: 1.4rem;
   --client-fz-ttl-mb: 1.6rem;
   --client-fz-ttl-dt: 2rem;
+
+  --team-primary-color: #f38181;
+  --team-secondary-color: #fce38a;
+  --team-accent-color: #95e1d3;
+  --team-divider-color: #ff4d4f;
+  --team-social-bg: #ffe082;
+  --team-social-icon: #ff6b6b;
+  --team-text-muted: #999;
+  --team-bg-light: #f5f5f5;
+
+  --team-gap: 2rem;
+  --team-transition: 0.25s ease-in-out;
+  --team-hover-offset: -10px;
 }
