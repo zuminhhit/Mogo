@@ -95,7 +95,7 @@
     transform var(--transition-speed-default) var(--transition-ease-default);
 }
 
-.Story-item-media-overlay__icon {
+.Story-item-media-overlay-icon {
   font-size: 1.8rem;
   color: var(--color-font-light);
   opacity: 0;
@@ -123,7 +123,7 @@
   transform: translateY(0);
 }
 
-.Story-item:hover .Story-item-media-overlay__icon,
+.Story-item:hover .Story-item-media-overlay-icon,
 .Story-item:hover .Story-item-media-overlay__text {
   opacity: 1;
   transform: translateY(0);

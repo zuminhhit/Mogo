@@ -53,7 +53,7 @@
   padding: 0;
 }
 
-.Social-item-subcriber-list-follow-proposal {
+.Social-item-subcriber-list-follow__proposal {
   font-weight: var(--fw-light);
   font-style: italic;
   margin-right: var(--m-spc-xs);
@@ -63,7 +63,7 @@
   margin-right: var(--m-spc-xs);
 }
 
-.Social-item-subcriber-list-follow-item__link {
+.Social-item-subcriber-list-follow-item-link {
   color: var(--color-bg-accent);
   font-size: var(--fz-base);
 }
@@ -207,11 +207,11 @@
     margin-bottom: var(--m-spc-lg);
   }
 
-  .Social-item-subcriber-list-follow-proposal {
+  .Social-item-subcriber-list-follow__proposal {
     margin-right: var(--m-spc-sm);
   }
 
-  .Social-item-subcriber-list-follow-item__link {
+  .Social-item-subcriber-list-follow-item-link {
     font-size: 1.2rem;
   }
 }

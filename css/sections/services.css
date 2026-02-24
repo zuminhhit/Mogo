@@ -52,7 +52,7 @@
 	border-bottom: 1px solid #c5c5c5;
 }
 
-.Service-item__icon {
+.Service-item-icon {
 	flex-shrink: 0;
 	font-size: 2rem;
 	color: #95e1d3;
@@ -74,11 +74,11 @@
 	color: #777;
 }
 
-.Service-item__icon {
+.Service-item-icon {
 	transition: color 0.3s ease;
 }
 
-.Service-item:hover .Service-item__icon {
+.Service-item:hover .Service-item-icon {
 	color: #f38181;
 }
 
