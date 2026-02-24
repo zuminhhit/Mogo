@@ -1,12 +1,13 @@
 .Services {
-    padding: var(--pc-p-section-default);
-    background: #fff;
+  padding: var(--pc-p-section-default);
+  background: #fff;
+  scroll-margin-top: var(--header-height-scroll);
 }
 
 .Services-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .Services-header {

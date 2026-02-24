@@ -1,5 +1,6 @@
 .Story {
   padding: var(--pc-p-section-default);
+  scroll-margin-top: var(--header-height-scroll);
 }
 
 .Story-container {

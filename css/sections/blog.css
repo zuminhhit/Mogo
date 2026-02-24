@@ -1,5 +1,6 @@
 .Blog {
   padding: var(--blog-section-pd-mb) 0;
+  scroll-margin-top: var(--header-height-scroll);
 }
 
 .Blog-container {

@@ -10,6 +10,7 @@
       rgba(252, 227, 138, 0.8)
     );
   --header-height: 80px;
+  --header-height-scroll: 80px;
   --container-width: 80%;
   --container-fluid-width: 100%;
   --transform-default: transform var(--transition-speed-default) var(--transition-ease-default);
@@ -96,4 +97,9 @@
   --team-gap: 2rem;
   --team-transition: 0.25s ease-in-out;
   --team-hover-offset: -10px;
+
+  --acc-border-color: #e5e5e5;
+  --acc-active-color: #95e1d3;
+  --acc-text-color: #333;
+  --acc-desc-color: #999;
 }

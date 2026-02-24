@@ -1,5 +1,6 @@
 .Work {
   padding: 4rem 0;
+  scroll-margin-top: var(--header-height-scroll);
 }
 
 .Work-container {

@@ -1,5 +1,6 @@
 .Social {
   margin: var(--m-section-mg-mb) 0;
+  scroll-margin-top: var(--header-height-scroll);
 }
 
 .Social-container {
