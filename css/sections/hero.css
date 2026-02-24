@@ -123,7 +123,7 @@
   display: none;
 }
 
-.Hero-arrow {
+.Hero-arw {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -139,8 +139,8 @@
   transition: opacity 0.3s ease;
 }
 
-.Hero-arrow--prev,
-.Hero-arrow--next {
+.Hero-arw--prev,
+.Hero-arw--next {
   display: inline-block;
   width: 2rem;
   height: 2rem;
@@ -152,14 +152,14 @@
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.Hero-arrow--prev {
+.Hero-arw--prev {
   left: 1rem;
-  background-image: url(../../assets/images/hero/left-arrow.svg);
+  background-image: url(../../assets/images/hero/left-arw.svg);
 }
 
-.Hero-arrow--next {
+.Hero-arw--next {
   right: 1rem;
-  background-image: url(../../assets/images/hero/right-arrow.svg);
+  background-image: url(../../assets/images/hero/right-arw.svg);
 }
 
 .Hero-arrow__img {
@@ -175,11 +175,11 @@
 }
 
 @media screen and (max-width: 959.98px) and (orientation: landscape) {
-  .Hero-arrow--prev {
+  .Hero-arw--prev {
     left: 3rem;
   }
 
-  .Hero-arrow--next {
+  .Hero-arw--next {
     right: 3rem;
   }
 
@@ -257,11 +257,11 @@
     font-weight: 700;
   }
 
-  .Hero-arrow--prev {
+  .Hero-arw--prev {
     left: 3rem;
   }
 
-  .Hero-arrow--next {
+  .Hero-arw--next {
     right: 3rem;
   }
 }

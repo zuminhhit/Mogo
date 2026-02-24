@@ -1,0 +1,163 @@
+.Comment {
+	margin: var(--pc-p-section-default);
+	padding: var(--pc-p-section-default);
+	background: #f8f8f8;
+}
+
+.Comment-container {
+	position: relative;
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+.Comment-arw {
+  background: none;
+	border: none;
+	cursor: pointer;
+
+	font-size: 1.5rem;
+	color: #bbb;
+
+	position: absolute;
+	top: 100%;
+	transform: translateY(-50%);
+	padding: 0.5rem;
+  z-index: 2;
+	transition: color .2s ease;
+}
+
+.Comment-arw:hover {
+	color: #333;
+}
+
+.Comment-arw--prev {
+	left: 35%;
+}
+
+.Comment-arw--next {
+	right: 35%;
+}
+
+.Comment-viewport {
+	overflow: hidden;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.Comment-viewport-track {
+	display: flex;
+	transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.Comment-viewport-track-slide {
+	min-width: 100%;
+	padding: 0 1rem;
+  display: flex;
+	text-align: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.Comment-viewport-track-slide-media {
+	flex-shrink: 0;
+}
+
+.Comment-viewport-track-slide-media__img {
+	width: 80px;
+	height: 80px;
+	object-fit: contain;
+}
+
+.Comment-viewport-track-slide-content {
+	max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 2rem;
+}
+
+.Comment-viewport-track-slide-content__quote {
+	font-style: italic;
+  text-align: start;
+	color: #777;
+	line-height: 1.6;
+	margin-bottom: 0.5rem;
+}
+
+.Comment-viewport-track-slide-content-author {
+	display: flex;
+	align-items: center;
+	gap: .75rem;
+}
+
+.Comment-viewport-track-slide-content-author__line {
+  display: inline-block;
+  text-align: center;
+  width: 3rem;
+  height: 0.15rem;
+  background: var(--team-divider-color);
+}
+
+.Comment-viewport-track-slide-content-author__name {
+      font-family: "Kaushan Script", cursive;
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #333;
+}
+
+@media screen and (max-width: 959.98px) and (orientation: landscape) {
+	.Comment {
+		padding: 4rem 0;
+	}
+
+	.Comment-viewport-track-slide__quote {
+		font-size: 1rem;
+	}
+
+  .Comment-viewport-track-slide-content {
+    margin-bottom: 3rem;
+  }
+
+	.Comment-arw {
+		font-size: 2rem;
+	}
+
+  .Comment-arw--prev {
+    left: 40%;
+  }
+
+  .Comment-arw--next {
+    right: 40%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+	.Comment {
+		padding: 5rem 0;
+	}
+
+  .Comment-arw {
+    font-size: 2rem;
+    top: 50%;
+  }
+
+  .Comment-arw--prev {
+    left: -1rem;
+  }
+
+  .Comment-arw--next {
+    right: -1rem;
+  }
+
+  .Comment-viewport-track-slide-media__img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .Comment-viewport-track-slide-content__quote {
+    line-height: 2;
+  }
+}
