@@ -1,5 +1,6 @@
 .Hero {
   min-height: 100dvh;
+  max-height: 800px;
   padding-top: var(--header-height);
   background: var(--background-hero-linear-gradient),
               url(../../assets/images/bg/hero_img_banner01_pc_sm_on.png?_rev=01)
@@ -176,6 +177,10 @@
 }
 
 @media screen and (max-width: 959.98px) and (orientation: landscape) {
+  .Hero {
+    height: 500px;
+  }
+
   .Hero-arw--prev {
     left: 3rem;
   }
@@ -204,6 +209,10 @@
 }
 
 @media screen and (min-width: 960px) {
+  .Hero {
+    height: 800px;
+  }
+
   .Hero-pagination {
     width: 80%;
     margin: 0 auto;
