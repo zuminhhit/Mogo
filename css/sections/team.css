@@ -110,7 +110,7 @@
   margin: 0;
 }
 
-.Team-media-item-inner-media-overlay-social-item-link {
+.Team-media-item-inner-media-overlay-social-item-lnk {
   width: 50px;
   aspect-ratio: 1;
   background: var(--team-social-bg);
@@ -122,7 +122,7 @@
   transition: all var(--team-transition);
 }
 
-.Team-media-item-inner-media-overlay-social-item-link:hover {
+.Team-media-item-inner-media-overlay-social-item-lnk:hover {
   background: var(--team-social-icon);
   color: #fff;
 }
