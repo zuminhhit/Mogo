@@ -1,5 +1,4 @@
 .Comment {
-	margin: var(--pc-p-section-default);
 	padding: var(--pc-p-section-default);
 	background: #f8f8f8;
 }
@@ -24,7 +23,6 @@
 	top: 100%;
 	transform: translateY(-50%);
 	padding: 0.5rem;
-  z-index: 2;
 	transition: color .2s ease;
 }
 

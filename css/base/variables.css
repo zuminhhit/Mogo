@@ -1,5 +1,5 @@
 :root {
-  --pc-p-section-default: 3rem 0;
+  --pc-p-section-default: 5rem 0;
   --sp-p-section-default: 3rem 0;
   --color-devider: #f38181;
   --color-overlay-bg: rgba(243, 129, 129, 0.9);
@@ -50,7 +50,7 @@
   --fz-small: 13px;
   --social-transition: all 0.3s linear;
   --map-clr-overlay: rgba(255, 255, 255, 0.75);
-  --map-h-mb: 50vh;
+  --map-h-mb: 30vh;
   --map-h-ls: 80vh;
   --map-h-dt: 50vh;
   --map-fz-icon-mb: 2rem;

@@ -1,7 +1,7 @@
 .Map {
   position: relative;
   height: var(--map-h-mb);
-  background: url(../../assets/images/map/mapbg.jpg) center / cover no-repeat;
+  background: url(../../assets/images/map/map_img_mapbanner01_pc_sm_on.jpg?_rev=01) center / cover no-repeat;
   overflow: hidden;
   margin: var(--section-mg-mb) 0;
 }

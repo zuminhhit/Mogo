@@ -129,10 +129,33 @@
   transform: translateY(0);
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (max-width: 959.98px) and (orientation: landscape) {
 	.Story-container {
 		width: 90%;
 	}
+
+  .Story-list {
+    flex-direction: row;
+  }
+
+  .Story-item {
+    width: calc(33.333% - 1rem);
+  }
+
+  .Story-item-media {
+    aspect-ratio: 1 / 1;
+  }
+}
+
+@media screen and (min-width: 960px) {
+	.Story-container {
+		width: 70%;
+	}
+
+  .Story-header {
+    max-width: 70%;
+    margin: 0 auto 4rem;
+  }
 
   .Story-list {
     flex-direction: row;

@@ -163,12 +163,18 @@
 
 @media screen and (max-width: 959.98px) and (orientation: landscape) {
   .Team-media-list { grid-template-columns: repeat(2, 1fr); }
-  .Team-brand-overlay-list { grid-template-columns: repeat(3, 1fr); }
+  .Team-brand-overlay-list { grid-template-columns: repeat(3, 1fr); margin: 0 auto; }
   .Team-brand-overlay-item__img { width: 50%; }
 }
 
 @media screen and (min-width: 960px) {
+  .Team-header { width: 70%; max-width: 70%;}
+  .Team-media { width: 70%; max-width: 70%; }
   .Team-media-list { grid-template-columns: repeat(3, 1fr); }
-  .Team-brand-overlay-list { grid-template-columns: repeat(6, 1fr); }
+  .Team-brand-overlay-list {
+    max-width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(6, 1fr);
+  }
   .Team-brand-overlay-item__img { width: 50%; }
 }

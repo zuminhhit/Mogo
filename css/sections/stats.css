@@ -33,7 +33,7 @@
   line-height: 1.4;
 }
 
-.Stats-item:not(:last-child)::after {
+.Stats-item::after {
   content: "";
   position: absolute;
   background: var(--stats-divider);
@@ -44,8 +44,14 @@
   width: auto;
 }
 
+.Stats-item:last-child::after {
+  display: none;
+}
+
 @media screen and (min-width: 960px) {
   .Stats-list {
+    width: 80%;
+    margin: 0 auto;
     flex-direction: row;
   }
 
@@ -53,12 +59,28 @@
     padding: 3rem 1rem;
   }
 
-  .Stats-item:not(:last-child)::after {
+  .Stats-item::after {
     top: 0;
     right: 0;
     left: auto;
     bottom: auto;
     width: 1px;
     height: 100%;
+  }
+
+  .Stats-item:first-child::before {
+    content: "";
+    position: absolute;
+    background: var(--stats-divider);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    display: block;
+  }
+
+  .Stats-item:last-child::after {
+    display: inline;
   }
 }

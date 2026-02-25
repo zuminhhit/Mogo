@@ -1,6 +1,7 @@
 .Client {
+	padding: var(--pc-p-section-default);
   background: linear-gradient(var(--client-bg-overlay), var(--client-bg-overlay)),
-    url(../../assets/images/client/bg.webp) center / cover no-repeat;
+    url(../../assets/images/client/client_img_bg01_pc_sm_on.webp?_rev=01) center / cover no-repeat;
   overflow: hidden;
   margin: var(--section-mg-mb) 0;
 }
@@ -9,7 +10,6 @@
   max-width: var(--container-width);
   width: 90%;
   margin: 0 auto;
-  padding: 0 2rem;
 }
 
 .Client-header {
@@ -67,14 +67,21 @@
   font-weight: 700;
   font-size: 0.95rem;
   text-transform: uppercase;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
 }
 
 .Client-item-content__position {
   font-size: 0.85rem;
   font-style: italic;
   color: var(--clr-text-muted);
-  margin-bottom: 0.6rem;
+}
+
+.Client-item-content__divider {
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: var(--color-devider);
+  margin: 0.8rem 0;
 }
 
 .Client-item-content__desc {
@@ -84,6 +91,11 @@
 }
 
 @media screen and (max-width: 959.98px) and (orientation: landscape) {
+  .Client-container {
+    width: 70%;
+    margin: 0 auto;
+  }
+
   .Client-overlay-item__img {
     width: var(--client-img-size-dt);
     height: var(--client-img-size-dt);
@@ -91,6 +103,11 @@
 }
 
 @media screen and (min-width: 960px) {
+  .Client-container {
+    width: 70%;
+    margin: 0 auto;
+  }
+
   .Client-header__ttl {
     font-size: var(--client-fz-ttl-dt);
   }

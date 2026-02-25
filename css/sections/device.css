@@ -1,7 +1,7 @@
 .Device {
   background:
     linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
-    url(../../assets/images/feature/design__bg.jpg) center / cover no-repeat;
+    url(../../assets/images/feature/device_img_bg01_pc_sm_on.jpg?_rev=01) center / cover no-repeat;
   padding: var(--pc-p-section-default) 0;
   margin-bottom: 20px;
 }

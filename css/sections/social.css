@@ -4,9 +4,9 @@
 }
 
 .Social-container {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 1rem;
 }
 
 .Social-list {
@@ -181,6 +181,10 @@
 @media screen and (min-width: 960px) {
   .Social {
     margin: var(--m-section-mg-dt) 0;
+  }
+
+  .Social-container {
+    width: 70%;
   }
 
   .Social-list {
